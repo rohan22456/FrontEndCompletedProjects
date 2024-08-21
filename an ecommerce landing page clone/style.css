@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* universal selector below  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: #f1f3f6;
+    /* height = 100vh;
+    width - 100vw; */
+}
+
+/* path */
+
+:root{
+    --primary-color:#2874f0;
+    /* background-color: #2874f0; */
+}
+
+/* what is this root variable _
+   ----- IT is a pseudo -class that matches the root element of a tree
+    representing the document .it is identical to the selector html <> except its specificity
+     is higher*/
+
+.container{
+    padding: 0 8px;
+}
+
+
+/* Header styling  */
+
+header{
+    background-color:  var(--primary-color);
+    height:  56px ;
+}
+
+.nav-container{
+    /* width: 80%; */
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 137px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    top: -1px;
+}
+.logo img{
+    height: 73%;
+    
+    padding: 10px 20px;
+    /* margin-left: 100px; */
+}
+
+.logo p{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    font-size: 0.65rem;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+}
+.logo p span{ 
+    color: yellow;
+    padding-left: 4px;
+
+}
+
+.logo p img{
+
+    max-height: 30px;
+    position: relative;
+    right: 18px;
+    bottom: 10px;
+
+} 
+
+/* NOW serach div and search bar and button */
+.search{
+    
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: -5px;
+}
+
+.search .search-container{
+  
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+    display: flex;
+}
+
+.search .search-container input{
+    width: 100%;
+    border: none;
+    outline: none;
+    /* outline is different than border ye border ke bhi bahar hota hia 
+     */
+    padding-left: 20px;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: white; 
+}
+
+.search .search-container button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: white;
+    padding-right: 10px;
+}
+
+
+
+  /*  NOW LOGIN BUTTON  */
+  .login{
+
+    display: flex;
+    /* background-color: white; */
+    width: 135px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    position: relative;
+    right: 45px;
+    
+
+
+  }
+  .login button{
+    display: flex;
+    height:  60%;
+    color: #2874f0;
+    font-weight:700;
+    font-size: 1.1rem;
+    width: 90%;
+    align-items: center;
+    justify-content:  center;
+  }
+
+  
+    /* now become a seller div */
+
+.become-seller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    right: 90px;
+}
+
+    /* now more div  */
+
+
+    .more{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        right: 130px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .more svg{
+        position: relative;
+        left: 10px;
+        transform: rotate(-90deg);
+    }
+
+    /*  NOW cart div */
+
+    .cart{
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 150px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .cart svg{
+        position: relative;
+        right: 8px;
+    }
+
+
+/* .nav-container{
+    display: flex;
+    justify-content: space-evenly;
+} */
+/* 
+styling the header 
+.uppersection{
+    display: flex;
+    justify-content:flex-start;
+    
+    height: 50px;
+    background: blue;
+    
+}
+.heading{
+    align-self: center;
+    margin: 0 20px;
+    margin-left: 60px;
+
+}
+
+styling the upper search bar
+
+.searchbar{
+    border: 1px solid white;
+    padding: 0 px;
+    width: 400px;
+    margin: 10px 0;
+    height: 75%;
+    JITNA bada width rhega utna content atega
+} */
+
+
+
+
+            /* SECITOn css from now */
+
+            .section-1{
+             
+                    width: 100%;
+                    height: 112px;
+                    background-color: white;
+                    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+            }
+
+            .section1-container{
+                display: flex;
+                justify-content:space-evenly;
+                text-align: justify;
+                margin: 17px;
+                /* margin-left: 40px; */
+
+            }
+
+            .section1-container .img{
+/*                 
+                display: flex;
+                justify-content: end;
+                align-items: start; */
+                display: flex;
+                flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
+            }
+
+
+            
+            .section1-container img{
+            height: 35%;
+            margin-bottom: 5px;
+            margin: 0 -30px 0 -30px;
+            /* padding:  */
+            
+            
+            /* position: relative;
+
+            left: 5px; */
+            }
+
+            /* .section1-container p{
+                text-align: center;
+            } */
+
+
+
+
+            /* NOW section 2 */
+
+            /* .section-2{
+                 background-color: gray; 
+            } */
+           
+           section .section-2 img{
+                max-width: 110%;
+                height: 100%;
+                /* padding-right: 40px; */
+                position: relative;
+                right: 50px;
+            }
+
+            section .section-2 {
+
+                width: 100%;
+                overflow: hidden;
+                margin-top: 16px;
+                height: 280px;
+                /* background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat; */
+            }
+
+
+
+            /* now section -3 */
+
+            .section-3 .container {
+                margin-top: 8px;
+                height: 122px;
+                background-image: url(https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            /* TOp offers wala section 4  */
+
+            .section-4 .container {
+                margin-top: 8px;
+                height: 362px;
+                /* thora height nahi doge toh dikkat hoga na percent use krne me  */
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        
+/* 
+            .topofferspara{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 500px;
+            } */
+
+
+            .section-4-offers {
+                width: 230px;
+                height: 100%;
+                background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90);
+                background-position: center bottom;
+                background-repeat: no-repeat;
+            }
+
+
+
+                .section-4-offers-viewall {
+                    margin-top: 132px;
+                    width: 100%;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                
+            }
+
+            .section-4-offers-viewall button {
+                margin-top: 24px;
+                height: 40px;
+                background-color: var(--primary-color);
+                color: white;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: 500;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+
+           
+
+
+            .list-images{
+                display: flex;
+                overflow-x: scroll;
+                max-width: 90%;
+                max-height: 100%;
+                justify-content: start;
+            }
+
+
+            /* NOW each item divs of head and price and explore now divs */
+            .list-images .item img{
+                max-height: 60%;
+            }
+
+            .list-images .item{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* .item-head , .item-price , .Explore-Now{
+                display: flex;
+                justify-content:center;
+            } */
+
+            .section-4 .item-head {
+                margin-top: 16px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .item-price{
+                margin-top: 12px;
+                font-size: 16px;
+                color: rgb(56, 142, 60);
+            }
+            .section-4 .Explore-Now {
+                opacity: 0.6;
+                /* text ka visibility thora kam kr diye hia yaha pe  */
+                margin-top: 12px;
+                font-weight: 300;
+                font-size: 12px;
+            }
+
+
+
+            /* NOW section 5 alia wala */
+
+            .section-5{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8px;
+                  
+            }
+            .section-5 img {
+                width: 33%;
+            }
+
+            /* now some footer */
+
+            footer {
+                margin-top: 26px;
+                background-color: white;
+                padding: 25px;
+                text-align: center;
+                font-size: 14px;
+                color: #878787;
+            }
+
+
+
+            /* now media query */
+
+            @media screen and (max-width : 900px){
+
+                .nav-container{
+                    height: 100%;
+                    display: flex;
+                    justify-content: start;
+                }
+
+                
+
+            }
