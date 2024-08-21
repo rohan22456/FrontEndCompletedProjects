@@ -17,8 +17,9 @@ This repository contains the code for a simple image carousel implemented with H
 
 ## Live Demo
 
-To see a live demo of the Image Carousel and Rain Heart Animation in action, visit [Demo](https://6524de8ebfb36c0becc95ef2--aesthetic-travesseiro-ac2785.netlify.app/).
 
+To see a live demo of the RainHeartAndImage Carousel in action, visit 👇🏼👇🏼  
+**[RainHeartAndImage Carousel](https://incredible-treacle-d052a4.netlify.app/)**
 ## Usage
 
 1. Clone the repository.
